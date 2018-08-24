@@ -86,7 +86,7 @@ os.system('aplay sound/main_theme.wav&')
 while True:
 
 	if 585 <= mario.y <= 590:
-		bonus = int((time.time()-t)//1)*30
+		bonus = int((150-(time.time()-t))//1)*30
 		os.system('pkill aplay')
 		os.system('aplay sound/flagpole.wav&')
 		while True:
